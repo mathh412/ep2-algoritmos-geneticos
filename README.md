@@ -1,5 +1,9 @@
 # Otimização de Reabastecimento de Estoque com Algoritmo Genético
 
+![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)
+![Status](https://img.shields.io/badge/Status-Conclu%C3%ADdo-success.svg)
+![Licença](https://img.shields.io/badge/Licen%C3%A7a-MIT-green.svg)
+
 Este repositório contém a implementação de um Algoritmo Genético (AG) desenvolvido para resolver o problema de reabastecimento semanal de uma rede de supermercados com 4 filiais e 20 produtos.
 
 O objetivo do algoritmo é gerar um plano de entregas que minimize os custos operacionais (frete e produtos) e evite penalidades rigorosas relacionadas a rupturas de estoque, excesso de armazenamento, validades e dias de entrega não permitidos.
@@ -8,10 +12,10 @@ O objetivo do algoritmo é gerar um plano de entregas que minimize os custos ope
 
 ```text
 /
-├── README.md               <- Este arquivo com as instruções de execução
+├── README.md           <- Este arquivo com as instruções de execução
 ├── src/
-│   ├── main.py             <- Código-fonte principal do Algoritmo Genético
-│   └── experimentos.py     <- Script de automação para o estudo de hiperparâmetros
+│   ├── main.py         <- Código-fonte principal do Algoritmo Genético
+│   └── experimentos.py <- Script de automação para o estudo de hiperparâmetros
 └── docs/
     ├── modelagem.md        <- Documentação técnica detalhando a modelagem do AG
     └── hiperparametros.md  <- Relatório de testes e gráficos de convergência
@@ -24,7 +28,14 @@ O projeto foi desenvolvido utilizando **Python puro** e não possui dependência
 
 ## Como Executar
 
-Abra o terminal, navegue até o diretório raiz do projeto e execute o arquivo `main.py` localizado na pasta `src`. Você pode rodar o algoritmo com os parâmetros padrão ou customizar os hiperparâmetros via linha de comando.
+Primeiro, clone o repositório para a sua máquina local e acesse a pasta do projeto:
+
+```bash
+git clone [https://github.com/mathh412/ep2-algoritmos-geneticos.git](https://github.com/mathh412/ep2-algoritmos-geneticos.git)
+cd ep2-algoritmos-geneticos
+```
+
+Em seguida, execute o arquivo `main.py` localizado na pasta `src`. Você pode rodar o algoritmo com os parâmetros padrão ou customizar os hiperparâmetros via linha de comando.
 
 ### Execução com Parâmetros Padrão
 
@@ -65,3 +76,15 @@ Ao final da execução (por limite de gerações ou detecção de convergência 
 * O custo total detalhado (Gasto com Produtos, Custo de Pedidos/Frete, Multas por Rupturas e Excessos).
 * O número de violações de restrições críticas na solução final.
 * O valor absoluto da Função de Aptidão (Fitness) alcançado pela melhor solução.
+
+
+## Autores
+
+Este projeto foi desenvolvido em equipe por:
+* **Eric Donato** - [LinkedIn](https://www.linkedin.com/in/ericdonato/)
+* **Matheus Henrique** - [LinkedIn](https://www.linkedin.com/in/matheus-henrique-b04a08253/)
+* **Paula Martins** - [LinkedIn](https://www.linkedin.com/in/paulamorin/)
+
+## Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
